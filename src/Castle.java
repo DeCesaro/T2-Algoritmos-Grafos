@@ -1,37 +1,34 @@
 public class Castle {
 
 	private int idCastle;
-	private int knights;
-	private boolean visited;
+	private int initialKnights;
+	private int remainingKnights;
 
-	public Castle(int idCastle) {
+	public Castle(int idCastle, int initialKnights) {
 		this.idCastle = idCastle;
-		this.knights = 0;
-	}
-
-	public Castle(int idCastle, int knights) {
-		this.idCastle = idCastle;
-		this.knights = knights;
+		this.initialKnights = initialKnights;
+		this.remainingKnights = initialKnights;
 	}
 
 	public int getIdCastle() {
 		return idCastle;
 	}
 
-	public void setIdCastle(int idCastle) {
-		this.idCastle = idCastle;
+
+	public int getInitialKnights() {
+		return initialKnights;
 	}
 
-	public int getKnights() {
-		return knights;
+	public void setInitialKnights(int initialKnights) {
+		this.initialKnights = initialKnights;
 	}
 
-	public void setKnights(int knights) {
-		this.knights = knights;
+	public int getRemainingKnights() {
+		return remainingKnights;
 	}
 
-	public boolean isVisited() {
-		return visited;
+	public void setRemainingKnights(int remainingKnights) {
+		this.remainingKnights = remainingKnights;
 	}
 
 	public String toString(){
@@ -39,7 +36,7 @@ public class Castle {
 		sb.append("Castle: ");
 		sb.append(getIdCastle()).append(", ");
 		sb.append("Knights: ");
-		sb.append(getKnights());
+		sb.append(getInitialKnights());
 		return  sb.toString();
 	}
 }
