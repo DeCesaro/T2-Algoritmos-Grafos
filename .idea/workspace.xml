@@ -3,13 +3,48 @@
   <component name="ChangeListManager">
     <list default="true" id="418c67d6-26b2-4890-8b0b-d7c90cd77067" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Castle.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Castle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Out.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Queue$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Queue$ListIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Queue$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Queue.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Reign.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Reign.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/caso30.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bin/caso30.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Castle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Castle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Stack$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Stack$ListIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Stack$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Stack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/StdIn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/StdOut.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/caso30.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/caso32.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/caso34.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/caso36.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/caso38.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/caso40.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/caso42.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/caso44.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/caso46.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/caso48.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/caso50.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/caso60.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Out.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Queue.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Reign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/caso30.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/caso30.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StdIn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StdOut.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/caso30.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/caso32.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/caso34.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/caso36.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/caso38.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/caso40.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/caso42.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/caso44.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/caso46.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/caso48.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/caso50.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/caso60.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,65 +57,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Reign.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="152" column="33" lean-forward="true" selection-end-line="162" />
-              <folding>
-                <element signature="e#743#781#0" expanded="true" />
-                <element signature="e#1926#1927#0" expanded="true" />
-                <element signature="e#1961#1962#0" expanded="true" />
-                <element signature="e#3237#3238#0" expanded="true" />
-                <element signature="e#3275#3276#0" expanded="true" />
-                <element signature="e#1932#1971#0" expanded="true" />
-                <element signature="e#3348#3371#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/In.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-187">
-              <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Castle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-              <folding>
-                <element signature="e#243#244#0" expanded="true" />
-                <element signature="e#265#266#0" expanded="true" />
-                <element signature="e#373#374#0" expanded="true" />
-                <element signature="e#401#402#0" expanded="true" />
-                <element signature="e#455#456#0" expanded="true" />
-                <element signature="e#498#499#0" expanded="true" />
-                <element signature="e#535#536#0" expanded="true" />
-                <element signature="e#565#566#0" expanded="true" />
-                <element signature="e#623#624#0" expanded="true" />
-                <element signature="e#670#671#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/caso30.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="150" column="4" selection-start-line="150" selection-start-column="4" selection-end-line="150" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -104,7 +81,9 @@
         <option value="$PROJECT_DIR$/src/Graph.java" />
         <option value="$PROJECT_DIR$/src/Castle.java" />
         <option value="$PROJECT_DIR$/src/caso30.txt" />
+        <option value="$PROJECT_DIR$/src/Out.java" />
         <option value="$PROJECT_DIR$/src/Reign.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -119,7 +98,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -136,7 +115,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -171,8 +150,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Reign" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Reign" />
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="BasicGraphs" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -226,17 +205,17 @@
       <workItem from="1558638557173" duration="312000" />
       <workItem from="1558643561372" duration="1260000" />
       <workItem from="1558659545313" duration="8790000" />
+      <workItem from="1558701213229" duration="3605000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17872000" />
+    <option name="totallyTimeSpent" value="21477000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14599092" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1482602" />
       <window_info id="Structure" order="1" side_tool="true" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -284,61 +263,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/casosTestes/caso30.txt" />
     <entry file="file://$PROJECT_DIR$/src/RecursiveGraphDFS.java" />
-    <entry file="file://$PROJECT_DIR$/src/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1751">
-          <caret line="103" column="48" selection-start-line="103" selection-start-column="14" selection-end-line="103" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graph.java" />
     <entry file="file://$PROJECT_DIR$/src/caso32.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/In.java">
+    <entry file="file://$PROJECT_DIR$/src/caso30.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+        <state relative-caret-position="2550">
+          <caret line="150" column="4" selection-start-line="150" selection-start-column="4" selection-end-line="150" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Out.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Castle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="-204">
           <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-          <folding>
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-            <element signature="e#670#671#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/caso30.txt">
+    <entry file="file://$PROJECT_DIR$/src/In.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="150" column="4" selection-start-line="150" selection-start-column="4" selection-end-line="150" selection-end-column="4" />
+        <state relative-caret-position="1139">
+          <caret line="193" column="18" selection-start-line="193" selection-start-column="18" selection-end-line="193" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#374#462#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Reign.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="152" column="33" lean-forward="true" selection-end-line="162" />
+        <state relative-caret-position="1020">
+          <caret line="78" column="31" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
           <folding>
-            <element signature="e#743#781#0" expanded="true" />
-            <element signature="e#1926#1927#0" expanded="true" />
-            <element signature="e#1961#1962#0" expanded="true" />
+            <element signature="e#780#818#0" expanded="true" />
+            <element signature="e#3217#3218#0" expanded="true" />
             <element signature="e#3237#3238#0" expanded="true" />
+            <element signature="e#3256#3257#0" expanded="true" />
             <element signature="e#3275#3276#0" expanded="true" />
-            <element signature="e#1932#1971#0" expanded="true" />
-            <element signature="e#3348#3371#0" expanded="true" />
           </folding>
         </state>
       </provider>

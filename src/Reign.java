@@ -12,7 +12,6 @@ public class Reign {
 	private int edges;
 	private int count = 0;
 	private List<Castle> roadsOfCastle[];
-	//private int siberioKn;
 
 	public Reign(In in){
 		try {
@@ -38,10 +37,12 @@ public class Reign {
 				}
 			}
 
-			//AQUI IMPRIMO TODAS AS ESTRADAS
+			//AQUI adiciono TODAS AS ESTRADAS
 			for (int i = 0; i < this.E(); i++) {
 				int v = in.readInt();
 				int w = in.readInt();
+				validateVertex(v);
+				validateVertex(w);
 				addEdge(v, w);
 			}
 		}
@@ -76,27 +77,22 @@ public class Reign {
 		conquered(desk, visited, temp);
 
 		//printMap(castles);
-
 		return count;
 	}
 
 	private void conquered(int target, boolean[] visited,int temp){
-
 
 		visited[target] = true;
 
 		for (Castle c : adj(target)) {
 			int cn = c.getIdCastle();
 			if (!visited[cn] && hasEnoughKnights(target, cn)) {
-				//System.out.println("asjkdsajd: "+temp);
 				conquered(cn, visited, temp+1);
 			}
-			//System.out.println("nao conquistou temp chamado "+temp);
 		}
 
 		visited[target] = false;
 		updateCastlesConquered(temp);
-		//System.out.println("Ultima tentativa aaaaa");
 	}
 
 	private void updateCastlesConquered(int temp) {
@@ -118,9 +114,6 @@ public class Reign {
 
 		int survived = toFrom - ((toGo * 2) + 50);
 
-		//int survived = toFrom - ((toGo * 2) + 50);
-
-
 		if (survived >= 0) {
 
 			def.setRemainingKnights(survived);
@@ -139,24 +132,9 @@ public class Reign {
 		return edges;
 	}
 
-//	private void validateVertex(int v) {
-//		if (v < 0 || v >= vertex)
-//			throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (vertex-1));
-//	}
-
-	public static void main(String[] args) {
-		Reign G = new Reign(new In("caso46.txt"));
-		System.out.println();
-		long initTime = System.currentTimeMillis();
-		System.out.println("Sibério pode conquistar "+G.conquered()+" castelos");
-		long endTime = System.currentTimeMillis();
-		long totalTime = endTime-initTime;
-
-		System.out.println("\nTempo total de execução: "+totalTime+" milissegundos");
-		//System.out.println();
-		//System.out.println("IMPRIMINDO CASTELOS NO HASH COM VALORES");
-		//G.printMap(G.castles); //IMPRIMIR OS CASTELOS
-		//StdOut.println(G);
-		//StdOut.println();
+	private void validateVertex(int v) {
+		if (v < 0 || v >= vertex)
+			throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + vertex);
 	}
+
 }
