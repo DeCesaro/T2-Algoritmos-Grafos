@@ -68,10 +68,15 @@ public class ConqueredCastles {
 	private boolean hasArmy(int one, int other) {
 		Castle attack = castlesOfKingdom.get(one);
 		Castle defense = castlesOfKingdom.get(other);
+
 		int destinyConquered = attack.getRemainingKnights();
+		int restOfTheArmy = destinyConquered - 50;
 		int townCenter = defense.getInitialKnights();
-		int survived = destinyConquered - ((townCenter * 2) + 50);
-		if (survived > 0) {
+
+		int survived = (restOfTheArmy - (townCenter * 2));
+		int armyNextAttack = survived - 50;
+
+		if (armyNextAttack > 0) {
 			defense.setRemainingKnights(survived);
 			return true;
 		}
