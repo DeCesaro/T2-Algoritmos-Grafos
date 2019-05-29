@@ -7,11 +7,11 @@ import java.util.*;
 
 public class ConqueredCastles {
 
-	private HashMap<Integer, Castle> castles;
+	private HashMap<Integer, Castle> castlesOfKingdom;
 	private int vertex;
 	private int edges;
-	private int count = 0;
-	private List<Castle> routeCastle[];
+	private int count;
+	private List<Castle> waysOfKingdom[];
 
 	public int V() {
 		return vertex;
@@ -23,41 +23,35 @@ public class ConqueredCastles {
 
 	private void validateVertex(int v) {
 		if (v < 0 || v >= vertex)
-			throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + vertex);
+			throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (vertex-1));
 	}
 
 	public void addEdge(int start, int finish) {
-		routeCastle[start].add(castles.get(finish));
-		routeCastle[finish].add(castles.get(start));
+		waysOfKingdom[start].add(castlesOfKingdom.get(finish));
+		waysOfKingdom[finish].add(castlesOfKingdom.get(start));
 	}
 
 	public List<Castle> adj(int target) {
-		return routeCastle[target];
+		return waysOfKingdom[target];
 	}
 
 	public ConqueredCastles(In in) {
 		try {
-			castles = new HashMap<>();
+			castlesOfKingdom = new HashMap<>();
 			int siberioArmy = in.readInt();
 			this.vertex = in.readInt();
 			vertex++;
 			if (vertex < 0) throw new IllegalArgumentException("Números de vértices em um Graph não pode ser negativo");
 			this.edges = in.readInt();
 			if (edges < 0) throw new IllegalArgumentException("Número de arestas em um Graph não pode ser negativo");
-			int wololo;
-			this.routeCastle = new LinkedList[vertex];
-
+			this.waysOfKingdom = new LinkedList[vertex];
 			//ADIÇÃO DOS CASTELOS NO HASHMAP
-			for (int i = 0; i < this.V(); i++) {
-				routeCastle[i] = new LinkedList<>();
-				if (i == 0) {
-					castles.put(i, new Castle(0, siberioArmy));
-				} else {
-					wololo = in.readInt();
-					castles.put(i, new Castle(wololo, in.readInt()));
-				}
+			castlesOfKingdom.put(0, new Castle(0, siberioArmy));
+			waysOfKingdom[0] = new LinkedList<>();
+			for (int i = 1; i < this.V(); i++) {
+				waysOfKingdom[i] = new LinkedList<>();
+				castlesOfKingdom.put(i, new Castle(in.readInt(), in.readInt()));
 			}
-
 			//Adição de todas as estradas
 			for (int i = 0; i < this.E(); i++) {
 				int v = in.readInt();
@@ -71,56 +65,40 @@ public class ConqueredCastles {
 		}
 	}
 
-	private boolean hasArmy(int dest, int initt) {
-
-		boolean AttackConfirmed = false;
-
-		Castle attack = castles.get(dest);
-		Castle defense = castles.get(initt);
-
+	private boolean hasArmy(int one, int other) {
+		Castle attack = castlesOfKingdom.get(one);
+		Castle defense = castlesOfKingdom.get(other);
 		int destinyConquered = attack.getRemainingKnights();
 		int townCenter = defense.getInitialKnights();
-
 		int survived = destinyConquered - ((townCenter * 2) + 50);
-
-		if (survived >= 0) {
-
+		if (survived > 0) {
 			defense.setRemainingKnights(survived);
-			AttackConfirmed = true;
+			return true;
 		}
-
-		return AttackConfirmed;
-
+		return false;
 	}
 
-	public int conquered() {
-
-		int dominating = 0;
-		boolean[] visited = new boolean[vertex + 1];
-		int wololo = castles.get(0).getNumCastle();
-		conquered(wololo, visited, dominating);
-
+	public int rush() {
+		boolean[] steps = new boolean[vertex+1];
+		rush(steps, 0, count);
 		return count;
 	}
 
-	private void conquered(int enemyCastle, boolean[] visited, int dominating) {
-
-		visited[enemyCastle] = true;
-
-		for (Castle c : adj(enemyCastle)) {
+	private void rush(boolean[] steps, int present,  int invadedLands) {
+		steps[present] = true;
+		for (Castle c : adj(present)) {
 			int castleTarget = c.getNumCastle();
-			if (!visited[castleTarget] && hasArmy(enemyCastle, castleTarget)) {
-				conquered(castleTarget, visited, dominating + 1);
+			if (!steps[castleTarget] && hasArmy(present, castleTarget)) {
+				rush(steps, castleTarget, invadedLands + 1);
 			}
 		}
-
-		visited[enemyCastle] = false;
-		updateReign(dominating);
+		updateKingdom(invadedLands);
+		steps[present] = false;
 	}
 
-	private void updateReign(int temp) {
-		if (temp >= this.count) {
-			this.count = temp;
+	private void updateKingdom(int temp) {
+		if (temp > count) {
+			count = temp;
 		}
 	}
 }

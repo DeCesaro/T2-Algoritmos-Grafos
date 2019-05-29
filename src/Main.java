@@ -27,7 +27,7 @@ public class Main {
 		System.out.println();
 		// Verifica o tempo de execução
 		long initTime = System.currentTimeMillis();
-		System.out.println("Sibério pode conquistar até: "+castleDomain.conquered()+" castelos");
+		System.out.println("Sibério pode conquistar até: "+castleDomain.rush()+" castelos");
 
 		long endTime = System.currentTimeMillis();
 		long finalTime = endTime-initTime;
@@ -35,6 +35,6 @@ public class Main {
 		long minutos  = ( finalTime / 60000 ) % 60;     // 60000   = 60 * 1000
 
 		System.out.println();
-		System.out.println( String.format( "Tempo de execução: %02d minutos, %02d segundos e %2d milissegundos", minutos, segundos, finalTime ) );
+		System.out.println( String.format( "Tempo de execução: %02d minutos e %02d segundos ou %2d milissegundos", minutos, segundos, finalTime ) );
 	}
 }
