@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.util.Scanner;
 
 public class Main {
 
@@ -23,22 +22,19 @@ public class Main {
 					options,
 					"não");
 		} while (response.equals("") || response.equals("não"));
-
-	//	System.out.println(response);
-		Reign reign = new Reign( new In(response));
-
+		ConqueredCastles castleDomain = new ConqueredCastles( new In(response));
 
 		System.out.println();
+		// Verifica o tempo de execução
 		long initTime = System.currentTimeMillis();
-		System.out.println("Sibério pode conquistar "+reign.conquered()+" castelos");
+		System.out.println("Sibério pode conquistar até: "+castleDomain.conquered()+" castelos");
+
 		long endTime = System.currentTimeMillis();
 		long finalTime = endTime-initTime;
 		long segundos = ( finalTime / 1000 ) % 60;      // se não precisar de segundos, basta remover esta linha.
 		long minutos  = ( finalTime / 60000 ) % 60;     // 60000   = 60 * 1000
-		//int horas    = ms / 3600000;            // 3600000 = 60 * 60 * 1000
+
 		System.out.println();
-		System.out.println( String.format( "%02d minutos, %02d segundos e %2d milissegundos", minutos, segundos, finalTime ) );
-		//System.out.println("\nTempo total de execução: "+()+" milissegundos");
-		
+		System.out.println( String.format( "Tempo de execução: %02d minutos, %02d segundos e %2d milissegundos", minutos, segundos, finalTime ) );
 	}
 }
