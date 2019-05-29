@@ -1,37 +1,37 @@
 public class Castle {
 
-	private int numCastle;
-	private int initialKnights;
-	private int remainingKnights;
+	private int idCastle; //identificador de um castelo
+	private int armyOfCastle; //exercito no começo
+	private int robustOfAt; //exercito que sobra a cada ataque
 
-	public Castle(int numCastle, int initialKnights) {
-		this.numCastle = numCastle;
-		this.initialKnights = initialKnights;
-		this.remainingKnights = initialKnights;
+	public Castle(int idCastle, int armyOfCastle) {
+		this.idCastle = idCastle;
+		this.armyOfCastle = armyOfCastle;
+		this.robustOfAt = armyOfCastle;
 	}
 
-	public int getNumCastle() {
-		return numCastle;
+	public int getIdCastle() {
+		return idCastle;
 	}
 
-	public int getInitialKnights() {
-		return initialKnights;
+	public int getArmyOfCastle() {
+		return armyOfCastle;
 	}
 
-	public int getRemainingKnights() {
-		return remainingKnights;
+	public int getRobustOfAt() {
+		return robustOfAt;
 	}
 
-	public void setRemainingKnights(int remainingKnights) {
-		this.remainingKnights = remainingKnights;
+	public void setRobustOfAt(int robustOfAt) {
+		this.robustOfAt = robustOfAt;
 	}
 
 	public String toString(){
 		StringBuilder sb = new StringBuilder();
 		sb.append("Castle: ");
-		sb.append(getNumCastle()).append(", ");
+		sb.append(getIdCastle()).append(", ");
 		sb.append("Knights: ");
-		sb.append(getInitialKnights());
+		sb.append(getArmyOfCastle());
 		return  sb.toString();
 	}
 }

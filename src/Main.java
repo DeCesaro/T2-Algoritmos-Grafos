@@ -22,7 +22,7 @@ public class Main {
 					options,
 					"não");
 		} while (response.equals("") || response.equals("não"));
-		ConqueredCastles castleDomain = new ConqueredCastles( new In(response));
+		ConqueredCastles castleDomain = new ConqueredCastles( new In(response)); //cria e popula o grafo de castelos
 
 		System.out.println();
 		// Verifica o tempo de execução
